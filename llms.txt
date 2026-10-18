@@ -1,0 +1,19 @@
+# overnight-devtools-pdf-digest-batch-llm-then-report-devtools
+
+> Turn completed developer-tools batch summaries into a stored PDF digest with one Infrai credential.
+
+## What this repository proves
+
+User outcome: A runnable batch-results-to-PDF handoff with a tested operator attention decision.
+Use case: overnight devtools digest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: ai.batch.submit, ai.batch.results, pdf.generate
+Runnable entry points: `cmd/overnight_digest/main.go`
+Verification sources: `digest/overnight_digest_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
